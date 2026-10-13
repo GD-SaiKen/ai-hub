@@ -8,6 +8,11 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout destination repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
       - name: Sync upstream main to company main
         uses: repo-sync/github-sync@v2
         with:
