@@ -4,6 +4,8 @@ dist/
 *.local
 npm-debug.log*
 
+.idea
+
 # Python
 .python-version.local
 .venv/
